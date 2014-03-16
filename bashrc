@@ -114,6 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 alias rm='echo Use Trash instead; true'
+alias trash='trash-put'
 alias clear='clear;clear'
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
