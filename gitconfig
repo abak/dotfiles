@@ -16,4 +16,5 @@
     ci = commit
     co = checkout
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-    lc = log --name-status --color HEAD^..HEAD 
+    lc = log --name-status --color HEAD^..HEAD
+    qdd = add 
