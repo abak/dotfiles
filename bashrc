@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias rm='echo Use Trash instead; true'
+alias rm='echo Use trash instead; true'
 alias trash='trash-put'
 alias clear='clear;clear'
 
