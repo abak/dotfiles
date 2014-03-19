@@ -119,5 +119,12 @@ alias clear='clear;clear'
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
-alias lgrep='ls -a | grep'
 alias please='sudo $(history -p !!)'
+
+function lgrep(){
+    ls -al | grep $1
+}
+
+function higrep(){
+    history | grep $1
+}
