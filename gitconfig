@@ -19,3 +19,5 @@
     lc = log --name-status --color HEAD^..HEAD
     qdd = add
     cm = commit -m
+[core]
+	excludesfile = ~/.gitignore_global
