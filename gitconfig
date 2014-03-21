@@ -19,5 +19,6 @@
     lc = log --name-status --color HEAD^..HEAD
     qdd = add
     cm = commit -m
+    update-submodules = submodule foreach git pull origin master
 [core]
 	excludesfile = ~/.gitignore_global
