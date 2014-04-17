@@ -223,6 +223,7 @@ fi
 alias rm='echo Use trash instead; true'
 alias trash='trash-put'
 alias clear='clear;clear'
+alias cd..='cd ..'
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
