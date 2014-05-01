@@ -225,6 +225,7 @@ alias trash='trash-put'
 alias clear='clear;clear'
 alias cd..='cd ..'
 alias sudo='sudo env PATH=$PATH'
+alias py='python'
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
