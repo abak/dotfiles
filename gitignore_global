@@ -1,7 +1,17 @@
 .swo
 .swp
+
+#usual build directory
 build/*
+
+#QtCreqtor files
 CMakeLists.txt.user
 *.autosave
 *.creator*
 *.config
+*.files
+*.includes
+
+#tex files
+*.aux
+*.synctex.gz

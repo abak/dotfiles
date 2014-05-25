@@ -159,7 +159,7 @@ if [ $? -eq 0 ]; then \
   echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
   if [ "$?" -eq "0" ]; then \
     # @4 - Clean repository - nothing to commit
-    echo "'$Green'"$(__git_ps1 " (%s)"); \
+    echo "'$Green'"$(__git_ps1 " {%s}"); \
   else \
     # @5 - Changes to working tree
     echo "'$IRed'"$(__git_ps1 " {%s}"); \
@@ -223,6 +223,9 @@ fi
 alias rm='echo Use trash instead; true'
 alias trash='trash-put'
 alias clear='clear;clear'
+alias cd..='cd ..'
+alias sudo='sudo env PATH=$PATH'
+alias py='python'
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
