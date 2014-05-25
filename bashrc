@@ -227,6 +227,7 @@ alias clear='clear;clear'
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 alias please='sudo $(history -p !!)'
+alias open=gnome-open
 
 function lgrep(){
     ls -al | grep $1
