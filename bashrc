@@ -227,8 +227,6 @@ alias cd..='cd ..'
 alias sudo='sudo env PATH=$PATH'
 alias py='python'
 
-export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
-
 alias please='sudo $(history -p !!)'
 alias open=gnome-open
 alias subl.='subl .'
@@ -240,3 +238,5 @@ function lgrep(){
 function higrep(){
     history | grep $1
 }
+
+export OPENCV_TEST_DATA_PATH="/home/adrien/DATA/opencv_extra/testdata"
