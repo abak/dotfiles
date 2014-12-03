@@ -1,10 +1,10 @@
 [user]
-	email = adrien.bak@metascale.org
-	name = Adrien BAK
+    email = adrien.bak@gmail.com
+    name = Adrien BAK
 [push]
-	default = simple
+    default = simple
 [color]
-	ui = auto
+    ui = auto
 [diff]
     tool = meld
 [difftool]
@@ -15,7 +15,7 @@
     st = status
     ci = commit
     co = checkout
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
     lc = log --name-status --color HEAD^..HEAD
     qdd = add
     cm = commit -m
