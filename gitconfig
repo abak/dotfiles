@@ -21,6 +21,6 @@
     cm = commit -m
     update-submodules = submodule foreach git pull origin master
 [core]
-	excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore_global
 [diff "nodiff"]
-	command = /bin/true
+    command = /bin/true
