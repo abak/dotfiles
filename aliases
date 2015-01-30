@@ -1,0 +1,20 @@
+alias please='sudo $(fc -ln -1)'
+alias clear='clear;clear'
+alias cd..='cd ..'
+alias py='python'
+
+if command -v trash-put >/dev/null 2>&1; then
+	alias rm='echo Use trash instead; true'
+	alias trash='trash-put'
+else
+	alias trash='echo trash is not installed'
+	unalias rm >/dev/null 2>&1;
+fi
+
+function lgrep(){
+    ls -al | grep $1
+}
+
+function higrep(){
+    history | grep $1
+}

@@ -220,23 +220,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias rm='echo Use trash instead; true'
-alias trash='trash-put'
-alias clear='clear;clear'
-alias cd..='cd ..'
-alias sudo='sudo env PATH=$PATH'
-alias py='python'
-
-alias please='sudo $(history -p !!)'
-alias open=gnome-open
-alias subl.='subl .'
-
-function lgrep(){
-    ls -al | grep $1
-}
-
-function higrep(){
-    history | grep $1
-}
-
-export OPENCV_TEST_DATA_PATH="/home/adrien/DATA/opencv_extra/testdata"
+source ~/.aliases
