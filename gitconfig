@@ -1,8 +1,6 @@
 [user]
     email = adrien.bak@gmail.com
     name = Adrien BAK
-[push]
-    default = simple
 [color]
     ui = auto
 [diff]
@@ -24,3 +22,5 @@
     excludesfile = ~/.gitignore_global
 [diff "nodiff"]
     command = /bin/true
+[push]
+	default = simple
