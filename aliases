@@ -1,14 +1,17 @@
 alias please='sudo $(fc -ln -1)'
 alias clear='clear;clear'
 alias cd..='cd ..'
+
 alias py='python'
 
+alias anti='ant -Dresolve_run=true'
+
 if command -v trash-put >/dev/null 2>&1; then
-	alias rm='echo Use trash instead; true'
-	alias trash='trash-put'
+    alias rm='echo Use trash instead; true'
+    alias trash='trash-put'
 else
-	alias trash='echo trash is not installed'
-	unalias rm >/dev/null 2>&1;
+    alias trash='echo trash is not installed'
+    unalias rm >/dev/null 2>&1;
 fi
 
 function lgrep(){
@@ -18,3 +21,4 @@ function lgrep(){
 function higrep(){
     history | grep $1
 }
+
