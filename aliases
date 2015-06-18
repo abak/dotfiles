@@ -22,3 +22,7 @@ function higrep(){
     history | grep $1
 }
 
+function sagi(){
+    sudo apt-get install $1
+}
+
