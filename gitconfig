@@ -1,5 +1,5 @@
 [user]
-    email = adrien.bak@gmail.com
+    email = abak@indeed.com
     name = Adrien BAK
 [color]
     ui = auto
@@ -18,9 +18,13 @@
     qdd = add
     cm = commit -m
     update-submodules = submodule foreach git pull origin master
+    gud = push --force
 [core]
     excludesfile = ~/.gitignore_global
 [diff "nodiff"]
     command = /bin/true
 [push]
-	default = simple
+    default = simple
+[include]
+    path=~/env/etc/git/general-config
+
