@@ -15,3 +15,6 @@ CMakeLists.txt.user
 #tex files
 *.aux
 *.synctex.gz
+
+#intellij files
+.idea/*
