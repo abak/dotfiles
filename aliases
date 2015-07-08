@@ -19,7 +19,7 @@ function lgrep(){
 }
 
 function higrep(){
-    history | grep $1
+    history 0 | grep $1
 }
 
 function sagi(){
