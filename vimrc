@@ -50,6 +50,7 @@ endif
 
 "Always show current position
 set ruler
+set number
 
 " Height of the command bar
 set cmdheight=2
@@ -265,7 +266,6 @@ func! DeleteTrailingWS()
   exe "normal `z"
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
-autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
