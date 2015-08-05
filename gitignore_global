@@ -3,6 +3,7 @@
 
 #usual build directory
 build/*
+ide-lib/*
 
 #QtCreqtor files
 CMakeLists.txt.user
@@ -18,3 +19,6 @@ CMakeLists.txt.user
 
 #intellij files
 .idea/*
+
+
+.DS_Store
