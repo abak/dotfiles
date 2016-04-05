@@ -19,6 +19,7 @@
     cm = commit -m
     update-submodules = submodule foreach git pull origin master
     gud = push --force
+    squash = commit --amend
 [core]
     excludesfile = ~/.gitignore_global
 [diff "nodiff"]
