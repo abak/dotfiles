@@ -1,5 +1,4 @@
 alias please='sudo $(fc -ln -1)'
-alias clear='clear;clear'
 alias cd..='cd ..'
 
 alias py='python'
