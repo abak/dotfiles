@@ -45,6 +45,7 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set number " Show the line number
+set relativenumber
 set updatetime=1000
 set ignorecase " Search insensitive
 set smartcase " ... but smart
@@ -62,4 +63,11 @@ set ttimeoutlen=0
 set timeoutlen=1000 
 au InsertEnter * set timeout
 au InsertLeave * set notimeout
+
+""" disable arrow keys for great justice
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 
