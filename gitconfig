@@ -1,6 +1,6 @@
 [user]
     email = abak@indeed.com
-    name = Adrien BAK
+    name = Adrien Bak
 [color]
     ui = auto
 [diff]
@@ -29,3 +29,7 @@
 [include]
     path=~/env/etc/git/general-config
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
