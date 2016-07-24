@@ -1,3 +1,6 @@
 [submodule "prezto"]
 	path = prezto
 	url = git@github.com:abak/prezto.git
+[submodule "vimd/bundle/Vundle.vim"]
+	path = vimd/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
