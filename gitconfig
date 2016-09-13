@@ -1,6 +1,5 @@
-[user]
-    email = abak@nvidia.com
-    name = Adrien Bak
+[include]
+  path = ~/.gituser
 [color]
   ui = auto
 [diff]
