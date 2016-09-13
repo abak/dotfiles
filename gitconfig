@@ -2,34 +2,42 @@
     email = abak@nvidia.com
     name = Adrien Bak
 [color]
-    ui = auto
+  ui = auto
 [diff]
-    tool = meld
+  tool = meld
+  algorithm = patience
 [difftool]
-    prompt = false
-    tool = meld
+  prompt = false
+  tool = meld
 [alias]
-    dt = difftool
-    st = status
-    ci = commit
-    co = checkout
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-    lc = log --name-status --color HEAD^..HEAD
-    qdd = add
-    cm = commit -m
-    update-submodules = submodule foreach git pull origin master
-    gud = push --force
-    squash = commit --amend
+  dt = difftool
+  st = status
+  ci = commit
+  co = checkout
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  lc = log --name-status --color HEAD^..HEAD
+  qdd = add
+  cm = commit -m
+  update-submodules = submodule foreach git pull origin master
+  gud = push --force
+  squash = commit --amend
+  lgf = log --
+  cosm = "!f(){ git checkout \"$@\" && git submodule update --init --recursive; }; f"
 [core]
-    excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [diff "nodiff"]
-    command = /bin/true
+  command = /bin/true
 [push]
-    default = simple
+  default = simple
 [include]
-    path=~/env/etc/git/general-config
+  path=~/env/etc/git/general-config
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
+  smudge = git-lfs smudge %f
+  required = true
+  clean = git-lfs clean %f
+[fetch]
+  prune = true
+[branch]
+  autosetuprebase = always
+
