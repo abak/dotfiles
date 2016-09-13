@@ -1,5 +1,6 @@
 backup/
-bundle/
+bundle/*
+!bundle/Vundle.vim
 swap/
 .netrwhist
 
