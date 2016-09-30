@@ -36,3 +36,7 @@ function clip() {
 function pilc() {
   xclip -o
 }
+
+function = {
+  echo "$@" | bc -l
+}
