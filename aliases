@@ -40,3 +40,8 @@ function pilc() {
 function = {
   echo "$@" | bc -l
 }
+
+function node() {
+  nodejs "$@"
+}
+
