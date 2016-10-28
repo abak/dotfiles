@@ -222,7 +222,8 @@ fi
 
 source ~/.aliases
 
-# Single-brace syntax because this is required in bash and sh alike
-if [ -e "$HOME/env/etc/indeedrc" ]; then
-    . "$HOME/env/etc/indeedrc"
-fi
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda-8.0/bin:$PATH
+export LD_LIBRARY_PATH=/home/abak/vibrante/t186/25-15//VibrantePDK/driveworks/lib:$LD_LIBRARY_PATH
+
+
