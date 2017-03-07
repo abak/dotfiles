@@ -18,7 +18,7 @@
   qdd = add
   cm = commit -m
   update-submodules = submodule foreach git pull origin master
-  gud = push --force
+  gud = push --force-with-lease
   squash = commit --amend
   lgf = log --
   cosm = "!f(){ git checkout \"$@\" && git submodule update --init --recursive; }; f"
@@ -28,9 +28,6 @@
   command = /bin/true
 [push]
   default = simple
-[include]
-  path=~/env/etc/git/general-config
-
 [filter "lfs"]
   smudge = git-lfs smudge %f
   required = true
@@ -40,3 +37,5 @@
 [branch]
   autosetuprebase = always
 
+[status]
+  short = true
