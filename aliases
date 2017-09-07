@@ -58,4 +58,6 @@ function stopwatch() {
     done
 }
 
-
+function pretty-json() {
+    python -m json.tool
+}

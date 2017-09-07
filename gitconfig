@@ -9,7 +9,7 @@
   prompt = false
   tool = meld
 [alias]
-  dt = difftool
+  dt = difftool -d
   st = status
   ci = commit
   co = checkout
