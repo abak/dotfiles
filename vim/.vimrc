@@ -17,6 +17,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'vimwiki'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()
 filetype plugin indent on
@@ -74,3 +77,7 @@ noremap <Right> <NOP>
 
 """ quit with :Q
 :command! -bar -bang Q quit<bang>
+
+colorscheme minimalist
+let g:airline_theme='minimalist'
+
