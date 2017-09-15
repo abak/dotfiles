@@ -21,9 +21,11 @@ function! CreateShortcut(keys, cmd, where, ...)
     execute "vmap " . keys . " " . c . k
   endif
 endfunction
+
 function! TabIsEmpty()
     return winnr('$') == 1 && len(expand('%')) == 0 && line2byte(line('$') + 1) <= 2
 endfunction
+
 function! MyQuit()
   if TabIsEmpty() == 1
     q!
@@ -37,6 +39,7 @@ function! MyQuit()
     endif
   endif
 endfunction
+
 function! OpenLastBufferInNewTab()
     redir => ls_output
     silent exec 'ls'
@@ -50,6 +53,7 @@ function! OpenLastBufferInNewTab()
       endif       
     endfor  
 endfunction
+
 function! ToggleColorColumn()
     if &colorcolumn != 0
         windo let &colorcolumn = 0
@@ -57,10 +61,12 @@ function! ToggleColorColumn()
         windo let &colorcolumn = 80
     endif
 endfunction
+
 function! MyPasteToggle()
   set invpaste
   echo "Paste" (&paste) ? "On" : "Off"
 endfunction
+
 function! OpenNetrw()
   if TabIsEmpty() == 1
     Explore
@@ -82,27 +88,6 @@ function! MenuNetrw()
   endif
 endfunction
 
-" Usefull shortcuts to enter insert mode
-"nnoremap <Enter> i<Enter>
-"nnoremap <Backspace> i<Backspace>
-"nnoremap <Space> i<Space>
-
-" Ctrl A - Begin Line
-call CreateShortcut("C-a", "0", "inv")
-
-" Ctrl E - End Line
-call CreateShortcut("C-e", "$<right>", "inv")
-
-" Ctrl S - Save
-call CreateShortcut("C-s", ":w<enter>", "nv", "cmdInVisual", "restoreSelectionAfter")
-call CreateShortcut("C-s", ":w<enter>i<right>", "i", "noTrailingIInInsert")
-
-" Home - Go To Begin
-call CreateShortcut("Home", "gg", "inv")
-
-" End - Go To End
-call CreateShortcut("End", "G", "inv")
-
 " Ctrl K - Delete Line
 call CreateShortcut("C-k", "dd", "in")
 call CreateShortcut("C-k", "d", "v")
@@ -112,37 +97,8 @@ call CreateShortcut("C-q", "mjyyp`jjl", "i")
 call CreateShortcut("C-q", "mjyyp`jj", "n")
 call CreateShortcut("C-q", "yP", "v")
 
-" Ctrl Down - Pagedown
-call CreateShortcut("C-Down", "20j", "inv")
-
-" Ctrl Up - Pageup
-call CreateShortcut("C-Up", "20k", "inv")
-
-" Ctrl Right - Next Word
-call CreateShortcut("C-Right", "w", "nv")
-
-" Ctrl Left - Previous Word
-call CreateShortcut("C-Left", "b", "nv")
-
-" Ctrl F - Find
-call CreateShortcut("C-f", ":/", "in", "noTrailingIInInsert")
-
 " Ctrl H - Search and Replace
 call CreateShortcut("C-h", ":%s/", "in", "noTrailingIInInsert")
-
-" Ctrl L - Delete all lines
-call CreateShortcut("C-l", "ggdG", "in")
-
-" Pageup - Move up Line
-call CreateShortcut("PageUp", ":m-2<enter>", "in")
-call CreateShortcut("PageUp", "dkP", "v")
-
-" Pagedown - Move down Line
-call CreateShortcut("PageDown", ":m+<enter>", "in")
-call CreateShortcut("PageDown", "dp", "v")
-
-" Ctrl C - Quit
-call CreateShortcut("C-c", ":call MyQuit()<enter>", "inv", "cmdInVisual")
 
 " Tab - Indent
 call CreateShortcut("Tab", ">>", "n")
@@ -152,19 +108,11 @@ call CreateShortcut("Tab", ">", "v", "restoreSelectionAfter")
 call CreateShortcut("S-Tab", "<<", "in")
 call CreateShortcut("S-Tab", "<", "v", "restoreSelectionAfter")
 
-" Ctrl Z - Undo
-call CreateShortcut("C-z", "u", "in")
-
 " Ctrl R - Redo
 call CreateShortcut("C-r", "<C-r>", "in")
 
-" Ctrl D - Suppr (the key)
-call CreateShortcut("C-d", "<del>", "iv", "noLeadingEscInInsert", "noTrailingIInInsert")
-call CreateShortcut("C-d", "x", "n")
-
 " Ctrl T - New tab
 call CreateShortcut("C-t", ":tabnew<enter>i", "inv", "noTrailingIInInsert", "cmdInVisual")
-
 
 " Alt Right - Next tab
 call CreateShortcut("A-Right", "gt", "inv")
