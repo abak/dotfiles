@@ -78,6 +78,8 @@ noremap <Right> <NOP>
 """ quit with :Q
 :command! -bar -bang Q quit<bang>
 
+let maplocalleader = ','
+
 colorscheme minimalist
 let g:airline_theme='minimalist'
 
