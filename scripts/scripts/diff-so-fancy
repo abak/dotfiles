@@ -1,0 +1,4 @@
+#! /bin/sh 
+
+$DOTFILES/scripts/diff-so-fancy-repo/third_party/build_fatpack/diff-so-fancy "$@"
+
