@@ -20,9 +20,11 @@
 [diff]
   tool = meld
   algorithm = patience
+
 [difftool]
   prompt = false
   tool = meld
+
 [alias]
   dt = difftool -d
   st = status
@@ -37,19 +39,25 @@
   squash = commit --amend
   lgf = log --
   cosm = "!f(){ git checkout \"$@\" && git submodule update --init --recursive; }; f"
+
 [core]
   excludesfile = ~/.gitignore_global
   pager = "diff-so-fancy | less --tabs=4 -RFX"
+
 [diff "nodiff"]
   command = /bin/true
+
 [push]
   default = simple
+
 [filter "lfs"]
   smudge = git-lfs smudge %f
   required = true
   clean = git-lfs clean %f
+
 [fetch]
   prune = true
+
 [branch]
   autosetuprebase = always
 
