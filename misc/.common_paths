@@ -1,0 +1,4 @@
+SCRIPT=$(readlink -f "$0")
+MISC_FOLDER=$(dirname "$SCRIPT")
+export DOTFILES=$(dirname "$MISC_FOLDER")
+
