@@ -7,3 +7,6 @@
 [submodule "scripts/diff-so-fancy-repo"]
 	path = scripts/diff-so-fancy-repo
 	url = git@github.com:so-fancy/diff-so-fancy.git
+[submodule "fish/.config/fish/functions/pure"]
+	path = fish/.config/fish/functions/pure
+	url = git@github.com:paulirish/pure.git

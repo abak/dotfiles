@@ -5,13 +5,6 @@
 build/*
 ide-lib/*
 
-#QtCreqtor files
-CMakeLists.txt.user
-*.autosave
-*.creator*
-*.config
-*.files
-*.includes
 
 #tex files
 *.aux
