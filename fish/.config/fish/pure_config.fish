@@ -1,5 +1,9 @@
 set fish_function_path $HOME/.config/fish/functions/pure $fish_function_path
 
+set pure_symbol_git_dirty "⚡"
+set pure_symbol_git_up_arrow "➚"
+set pure_Symbol_git_down_arrow "➘"
+
 set pure_color_blue (set_color -o blue)
 set pure_color_cyan (set_color "1e95fd")
 set pure_color_gray (set_color -o "6c6c6c")
