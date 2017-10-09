@@ -10,3 +10,6 @@
 [submodule "fish/.config/fish/functions/pure"]
 	path = fish/.config/fish/functions/pure
 	url = git@github.com:paulirish/pure.git
+[submodule "fish/.config/fish/functions/z-fish"]
+	path = fish/.config/fish/functions/z-fish
+	url = git@github.com:roryokane/z-fish.git
