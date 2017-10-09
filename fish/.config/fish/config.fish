@@ -3,7 +3,7 @@ set current_dir (cd (dirname (readlink -m (status -f))); and pwd)
 set -x DOTFILES (dirname (dirname (dirname $current_dir)))
 
 #let's not source that for the time being
-#source colors.fish
+source colors.fish
 
 # PURE prompt 
 source pure_config.fish
