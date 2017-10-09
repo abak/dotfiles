@@ -1,29 +1,20 @@
-# Readline colors
-set fish_color_autosuggestion:9C9C9C
-set fish_color_command:F4F4F4
-set fish_color_comment:B0B0B0
-set fish_color_cwd:green
-set fish_color_cwd_root:red
-set fish_color_end:969696
-set fish_color_error:FFA779
-set fish_color_escape:cyan
-set fish_color_history_current:cyan
-set fish_color_host:\x2do\x1ecyan
-set fish_color_match:cyan
-set fish_color_normal:normal
-set fish_color_operator:cyan
-set fish_color_param:A0A0F0
-set fish_color_quote:666A80
-set fish_color_redirection:FAFAFA
-set fish_color_search_match:\x2d\x2dbackground\x3dpurple
-set fish_color_selection:\x2d\x2dbackground\x3dpurple
-set fish_color_status:red
-set fish_color_user:\x2do\x1egreen
-set fish_color_valid_path:\x2d\x2dunderline
-set fish_key_bindings:fish_default_key_bindings
-
-set fish_pager_color_completion:normal
-set fish_pager_color_description:555\x1eyellow
-set fish_pager_color_prefix:cyan
-set fish_pager_color_progress:cyan
+set -g fish_color_autosuggestion 555 yellow
+set -g fish_color_command 5f87d7
+set -g fish_color_comment 808080
+set -g fish_color_cwd 87af5f
+set -g fish_color_cwd_root 5f0000
+set -g fish_color_error 870000 --bold
+set -g fish_color_escape af5f5f
+set -g fish_color_history_current 87afd7
+set -g fish_color_host 5f87af
+set -g fish_color_match d7d7d7 --background=303030
+set -g fish_color_normal normal
+set -g fish_color_operator d7d7d7
+set -g fish_color_param 5f87af
+set -g fish_color_quote d7af5f
+set -g fish_color_redirection normal
+set -g fish_color_search_match --background=purple
+set -g fish_color_status 5f0000
+set -g fish_color_user 5f875f
+set -g fish_color_valid_path --underline
 
