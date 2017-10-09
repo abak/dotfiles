@@ -20,6 +20,7 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'dag/vim-fish'
 
 call vundle#end()
 filetype plugin indent on
