@@ -1,3 +1,6 @@
+# get and set DOTFILES
+set current_dir (cd (dirname (readlink -m (status -f))); and pwd)
+set -x DOTFILES (dirname (dirname (dirname $current_dir)))
 
 
 # THEME PURE #
@@ -10,7 +13,6 @@ set pure_color_green (set_color "66ff66")
 set pure_color_normal (set_color "000000")
 set pure_color_red (set_color "f820ff")
 set pure_color_yellow (set_color "1bc8c8")
-
 
 # Z
 source $HOME/.config/fish/functions/z-fish/z.fish
