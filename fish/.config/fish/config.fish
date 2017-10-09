@@ -11,3 +11,9 @@ set pure_color_normal (set_color "000000")
 set pure_color_red (set_color "f820ff")
 set pure_color_yellow (set_color "1bc8c8")
 
+
+# Z
+source $HOME/.config/fish/functions/z-fish/z.fish
+
+
+source env.fish
