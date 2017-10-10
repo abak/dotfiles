@@ -1,15 +1,22 @@
 # get and set DOTFILES
+set uname (uname)
+if [ $uname = "Darwin" ]
+  set PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
+end
+
 set current_dir (cd (dirname (readlink -m (status -f))); and pwd)
 set -x DOTFILES (dirname (dirname (dirname $current_dir)))
 
-source colors.fish
+set config_path $HOME/.config/fish
 
-# PURE prompt 
-source pure_config.fish
+source $config_path/colors.fish
+
+# prompt 
+source $config_path/prompt.fish
 
 # Z
-source $HOME/.config/fish/functions/z-fish/z.fish
+source $config_path/functions/z-fish/z.fish
 
 # Set my paths and stuff
-source env.fish
+source $config_path/env.fish
 
