@@ -21,6 +21,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-scripts/fish.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -69,6 +70,10 @@ set ttimeoutlen=0
 set timeoutlen=1000 
 au InsertEnter * set timeout
 au InsertLeave * set notimeout
+
+""" tell vim to use bash even if fish is my daiy driver
+set shell=/bin/bash
+
 
 """ disable arrow keys for great justice
 noremap <Up> <NOP>
