@@ -1,8 +1,3 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Details on : https://github.com/sd65/MiniVim
-let MiniVimVersion = 1.1
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 """ Vundle Required Options
 set nocompatible
 filetype off
@@ -22,6 +17,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-scripts/fish.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'valloric/youcompleteme'
 
 call vundle#end()
 filetype plugin indent on
