@@ -159,10 +159,10 @@ if [ $? -eq 0 ]; then \
   echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
   if [ "$?" -eq "0" ]; then \
     # @4 - Clean repository - nothing to commit
-    echo "'$Green'"$(__git_ps1 " {%s}"); \
+#     echo "'$Green'"$(__git_ps1 " {%s}"); \
   else \
     # @5 - Changes to working tree
-    echo "'$IRed'"$(__git_ps1 " {%s}"); \
+ #   echo "'$IRed'"$(__git_ps1 " {%s}"); \
   fi)'$Color_Off'"; \
 #else \
   # @2 - Prompt when not in GIT repo
@@ -222,8 +222,6 @@ fi
 
 source ~/.aliases
 
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
-export PATH=/usr/local/cuda-8.0/bin:$PATH
-export LD_LIBRARY_PATH=/home/abak/vibrante/t186/25-15//VibrantePDK/driveworks/lib:$LD_LIBRARY_PATH
+export EDITOR=vim
 
 
