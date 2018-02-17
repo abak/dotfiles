@@ -20,3 +20,8 @@ source $config_path/functions/z-fish/z.fish
 # Set my paths and stuff
 source $config_path/env.fish
 
+if test -e $config_path/local.fish
+  source $config_path/local.fish
+end
+
+
