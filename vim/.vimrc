@@ -85,3 +85,5 @@ let maplocalleader = ','
 colorscheme minimalist
 let g:airline_theme='minimalist'
 
+autocmd filetype crontab setlocal nobackup nowritebackup
+
