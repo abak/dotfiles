@@ -25,3 +25,5 @@ if test -e $config_path/local.fish
 end
 
 
+cd $HOME
+

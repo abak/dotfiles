@@ -64,3 +64,5 @@
 [status]
   short = true
 
+[merge]
+  tool = meld

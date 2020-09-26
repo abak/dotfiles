@@ -17,7 +17,6 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-scripts/fish.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'valloric/youcompleteme'
 
 call vundle#end()
 filetype plugin indent on
