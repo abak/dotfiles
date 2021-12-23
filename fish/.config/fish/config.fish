@@ -15,7 +15,7 @@ source $config_path/colors.fish
 source $config_path/prompt.fish
 
 # Z
-source $config_path/functions/z-fish/z.fish
+#source $config_path/functions/z-fish/z.fish
 
 # Set my paths and stuff
 source $config_path/env.fish
