@@ -13,6 +13,3 @@
 [submodule "fish/.config/fish/functions/z-fish"]
 	path = fish/.config/fish/functions/z-fish
 	url = git@github.com:roryokane/z-fish.git
-[submodule "fish/.config/fish/functions/shellder"]
-	path = fish/.config/fish/functions/shellder
-	url = git@github.com:simnalamburt/shellder.git
