@@ -11,8 +11,6 @@ set config_path $HOME/.config/fish
 
 source $config_path/colors.fish
 
-# prompt 
-source $config_path/prompt.fish
 
 # Z
 #source $config_path/functions/z-fish/z.fish
@@ -24,6 +22,8 @@ if test -e $config_path/local.fish
   source $config_path/local.fish
 end
 
+# needs to have starfish loaded in PATH
+starship init fish | source
 
 cd $HOME
 
