@@ -226,3 +226,5 @@ export EDITOR=vim
 
 
 . "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"
