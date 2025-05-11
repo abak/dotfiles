@@ -225,3 +225,4 @@ source ~/.aliases
 export EDITOR=vim
 
 
+. "$HOME/.cargo/env"
