@@ -1,4 +1,5 @@
 set PATH $PATH /opt/homebrew/bin
+set PATH $HOME/.docker/bin $PATH 
 set PATH $HOME/bin $PATH
 
 set PATH $HOME/scripts $PATH
